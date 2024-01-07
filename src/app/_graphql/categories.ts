@@ -6,7 +6,8 @@ export const PRODUCT_CATEGORIES = `categories {
     label
   }
 }`
-export const CATEGORIES = `categories {
+
+export const CATEGORIES = `
   query Categories {
     Categories(limit: 300) {
       docs {
@@ -14,11 +15,11 @@ export const CATEGORIES = `categories {
         title
         media {
           alt
-          url
           width
           height
+          url
         }
       }
     }
   }
-}`
+`
