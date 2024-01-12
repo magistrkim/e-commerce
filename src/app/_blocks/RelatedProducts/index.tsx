@@ -16,16 +16,12 @@ export type RelatedProductsProps = {
 }
 
 export const RelatedProducts: React.FC<RelatedProductsProps> = props => {
-  const { introContent, docs, relationTo } = props
+  const { docs, relationTo } = props
 
   return (
     <div className={classes.relatedProducts}>
-      {introContent && (
-        <Gutter className={classes.introContent}>
-          <RichText content={introContent} />
-        </Gutter>
-      )}
       <Gutter>
+        <h3 className={classes.title}>Related Products</h3>
         <div className={classes.grid}>
           {docs?.map((doc, index) => {
             if (typeof doc === 'string') return null
