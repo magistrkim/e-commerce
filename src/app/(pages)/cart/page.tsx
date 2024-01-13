@@ -8,8 +8,8 @@ import { fetchDoc } from '../../_api/fetchDoc'
 import { fetchSettings } from '../../_api/fetchGlobals'
 import { Blocks } from '../../_components/Blocks'
 import { Gutter } from '../../_components/Gutter'
-import { Hero } from '../../_components/Hero'
-import { Message } from '../../_components/Message'
+// import { Hero } from '../../_components/Hero'
+// import { Message } from '../../_components/Message'
 import { generateMeta } from '../../_utilities/generateMeta'
 import { CartPage } from './CartPage'
 
@@ -57,8 +57,8 @@ export default async function Cart() {
   }
 
   return (
-    <Fragment>
-      {!process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY && (
+    <div className={classes.container}>
+      {/* {!process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY && (
         <Gutter>
           <Message
             className={classes.message}
@@ -85,13 +85,14 @@ export default async function Cart() {
             }
           />
         </Gutter>
-      )}
-      <Hero {...page?.hero} />
+      )} */}
+      {/* <Hero {...page?.hero} /> */}
       <Gutter>
+        <h3>Cart</h3>
         <CartPage settings={settings} page={page} />
       </Gutter>
-      <Blocks blocks={page?.layout} />
-    </Fragment>
+      <Blocks blocks={page?.layout} disableBottomPadding={true} />
+    </div>
   )
 }
 
