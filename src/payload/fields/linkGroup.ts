@@ -2,6 +2,7 @@ import type { ArrayField } from 'payload/dist/fields/config/types'
 import type { Field } from 'payload/types'
 
 import deepMerge from '../utilities/deepMerge'
+
 import type { LinkAppearances } from './link'
 import link from './link'
 

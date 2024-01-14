@@ -1,14 +1,14 @@
 'use client'
 
 import React from 'react'
-import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
+import { Footer, Media } from '../../../../payload/payload-types'
+import { inclusions, noHeaderFooterUrls } from '../../../constants'
 import { Button } from '../../Button'
 import { Gutter } from '../../Gutter'
-import { inclusions, noHeaderFooterUrls } from '../../../constants'
-import { Footer, Media } from '../../../../payload/payload-types'
 
 import classes from './index.module.scss'
 

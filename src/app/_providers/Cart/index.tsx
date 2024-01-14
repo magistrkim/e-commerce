@@ -12,6 +12,7 @@ import React, {
 
 import { Product, User } from '../../../payload/payload-types'
 import { useAuth } from '../Auth'
+
 import { CartItem, cartReducer } from './reducer'
 
 export type CartContext = {

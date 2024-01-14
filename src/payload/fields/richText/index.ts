@@ -8,6 +8,7 @@ import type { RichTextField } from 'payload/dist/fields/config/types'
 
 import deepMerge from '../../utilities/deepMerge'
 import link from '../link'
+
 import elements from './elements'
 import leaves from './leaves'
 

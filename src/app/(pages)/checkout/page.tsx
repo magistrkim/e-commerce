@@ -6,6 +6,7 @@ import { fetchSettings } from '../../_api/fetchGlobals'
 import { Gutter } from '../../_components/Gutter'
 import { getMeUser } from '../../_utilities/getMeUser'
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
+
 import { CheckoutPage } from './CheckoutPage'
 
 import classes from './index.module.scss'

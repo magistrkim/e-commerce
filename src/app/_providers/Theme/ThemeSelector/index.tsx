@@ -3,8 +3,9 @@
 import React from 'react'
 
 import { Chevron } from '../../../_components/Chevron'
-import { useTheme } from '..'
 import { getImplicitPreference } from '../shared'
+import { useTheme } from '..'
+
 import { Theme, themeLocalStorageKey } from './types'
 
 import classes from './index.module.scss'
