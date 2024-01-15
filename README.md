@@ -4,6 +4,7 @@ The chic, luminous, sleek, and trendy website, crafted with the powerful combo o
 - Stripe,
 - Next 14,
 - TypeScript
+
 A fusion that adds an extra layer of coolness and sophistication.
 This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
 
